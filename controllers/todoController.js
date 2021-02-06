@@ -5,7 +5,7 @@ const createTodo = (todo, cb) => {
 };
 
 const getTodos = cb => {
-  Todo.find({}, cb);
+  Todo.find({ isDeleted: false }, cb);
 };
 
 // TODO: put condition for user
